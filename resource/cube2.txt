@@ -1,0 +1,48 @@
+texfilepath	C:\\Users\\mrzhang\\Desktop\\文件\\编程\\自己的代码\\格斗\\res\\2.bmp
+vetex -1000 -2000 1000
+vetex 0 -2000 1000
+vetex 1000 -2000 1000
+vetex -1000 -1000 1000
+vetex 0 -1000 1000
+vetex 1000 -1000 1000
+vetex -1000 0 1000
+vetex 0 0 1000
+vetex 1000 0 1000
+vetex -1000 0 0
+vetex 0 0 0
+vetex 1000 0 0
+vetex -1000 0 -1000
+vetex 0 0 -1000
+vetex 1000 0 -1000
+IDtri 0 3 1
+texCoord 0 0 0 1 1 0
+IDtri 1 3 4
+texCoord 1 0 0 1 1 1
+IDtri 1 4 2
+texCoord 0 0 0 1 1 0
+IDtri 2 4 5
+texCoord 1 0 0 1 1 1
+IDtri 3 6 4
+texCoord 0 0 0 1 1 0
+IDtri 4 6 7
+texCoord 1 0 0 1 1 1
+IDtri 4 7 5
+texCoord 0 0 0 1 1 0
+IDtri 5 7 8
+texCoord 1 0 0 1 1 1
+IDtri 6 9 7
+texCoord 0 0 0 1 1 0
+IDtri 7 9 10
+texCoord 1 0 0 1 1 1
+IDtri 7 10 8
+texCoord 0 0 0 1 1 0
+IDtri 8 10 11
+texCoord 1 0 0 1 1 1
+IDtri 9 12 10
+texCoord 0 0 0 1 1 0
+IDtri 10 12 13
+texCoord 1 0 0 1 1 1
+IDtri 10 13 11
+texCoord 0 0 0 1 1 0
+IDtri 11 13 14
+texCoord 1 0 0 1 1 1

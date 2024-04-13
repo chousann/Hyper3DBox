@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.project
+/Debug/
+/Hyper3DBox.aps
+/Hyper3DBox.opt
+/Hyper3DBox.plg
