@@ -60,7 +60,7 @@ public:
 		m_objectList.push_back(obj);
 	}
 	void loadPlayer(){
-		string fileFullPath="..\\resource\\";
+		string fileFullPath="resource\\";
 		string filename="cube1.txt";
 		CVector4 worldPos2(m_camera->getEyePos().x(),m_camera->getEyePos().y()+300,m_camera->getEyePos().z()+600,1);
 		Object obj2(fileFullPath,filename,worldPos2,"player");

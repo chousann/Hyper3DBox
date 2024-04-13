@@ -307,13 +307,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 void load(){
 	CVector4 worldPos(0,700,2000,1);
-	string fileFullPath="..\\resource\\";
+	string fileFullPath="resource\\";
 	string filename="file.obj";
 	Object obj0(fileFullPath,filename,worldPos,"cube","obj");
 	obj0.rotate.setx(180);
 	scene.loadObject(obj0);
 	CVector4 worldPos1(200,-50,600,1);
-	fileFullPath="..\\resource\\";
+	fileFullPath="resource\\";
 	filename="cube.txt";
 	Object obj1(fileFullPath,filename,worldPos1,"cube1","txt");
 	scene.loadObject(obj1);
