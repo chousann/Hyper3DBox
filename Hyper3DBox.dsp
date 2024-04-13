@@ -90,6 +90,22 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
+SOURCE=.\Soft3DEngine\Camera.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\CMath.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\CTriangle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\GLMath.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\Hyper3DBox.cpp
 # End Source File
 # Begin Source File
@@ -98,8 +114,28 @@ SOURCE=.\Hyper3DBox.rc
 # End Source File
 # Begin Source File
 
+SOURCE=.\Soft3DEngine\Matrix.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Scene.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\StdAfx.cpp
 # ADD CPP /Yc"stdafx.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Utils.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Vector.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\VideoBuf.cpp
 # End Source File
 # End Group
 # Begin Group "Header Files"
@@ -107,7 +143,47 @@ SOURCE=.\StdAfx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
+SOURCE=.\Soft3DEngine\Camera.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\CMath.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\CTriangle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Cvert.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\GLMath.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\Hyper3DBox.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Matrix.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Mesh.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Object.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Range.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\readmodel.h
 # End Source File
 # Begin Source File
 
@@ -115,7 +191,27 @@ SOURCE=.\resource.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\Soft3DEngine\Scene.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Triangle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Utils.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\Vector.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Soft3DEngine\VideoBuf.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
@@ -127,9 +223,41 @@ SOURCE=.\Hyper3DBox.ico
 # End Source File
 # Begin Source File
 
+SOURCE=.\resource\q1i.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\qi.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\qi1.bmp
+# End Source File
+# Begin Source File
+
 SOURCE=.\small.ico
 # End Source File
 # End Group
+# Begin Source File
+
+SOURCE=.\resource\cube.txt
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\cube1.txt
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\cube2.txt
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\cube3.txt
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource\cube4.txt
+# End Source File
 # Begin Source File
 
 SOURCE=.\ReadMe.txt
