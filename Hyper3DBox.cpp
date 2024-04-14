@@ -102,9 +102,9 @@ void gameMain(MSG msg){
 	itoa(fps,str,10);
 	TextOut(hdc,0,0,str,10);
 
-	TextOut(hdc,0,20,"J,K,L,I,N,Mò??ˉ??ì?",19);
-	TextOut(hdc,0,40,"UP,DOWN,LEFT,RIGHT,Z,Xò??ˉ?à?ú",30);
-	TextOut(hdc,0,60,"A,S,D,WDy×a??ì?",15);
+	TextOut(hdc,0,20,"J,K,L,I,N,M移动物体",19);
+	TextOut(hdc,0,40,"UP,DOWN,LEFT,RIGHT,Z,X移动相机",30);
+	TextOut(hdc,0,60,"A,S,D,W旋转物体",15);
 	char str1[10]={0,0,0,0,0,0,0,0,0,0};
 	itoa(scene.vNum,str1,10);
 	TextOut(hdc,0,80,str1,10);
@@ -190,7 +190,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //
 //
 LPSTR str="222";
-LPCSTR str1("C:\\Users\\mrzhang\\Desktop\\???t\\±à3ì\\×??oμ?′ú??\\???·\\res\\qi.bmp");
+LPCSTR str1("C:\\Users\\mrzhang\\Desktop\\文件\\编程\\自己的代码\\格斗\\res\\qi.bmp");
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	int wmId, wmEvent;
@@ -207,15 +207,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			OnKeyDown(hWnd,message,wParam,lParam);
 			break;
 		case WM_CREATE:{
-			//??è??í?§??3?′?
+			//获取客户区尺寸
 			RECT rect;
 			GetClientRect (hWnd,&rect);
 			int cxClient=rect.right;
 			int cyClient=rect.bottom;
-			LPCSTR str="C:\\Users\\mrzhang\\Desktop\\???t\\±à3ì\\×??oμ?′ú??\\???·\\res\\qi.bmp";
-			//??μ??°???o3???μ?DC
+			LPCSTR str="C:\\Users\\mrzhang\\Desktop\\文件\\编程\\自己的代码\\格斗\\res\\qi.bmp";
+			//获得前置缓冲区的DC
 			HDC hdc1=GetDC(hWnd);
-			//×°????í?
+			//装载位图
 			HBITMAP hbitmap=(HBITMAP)LoadImage(NULL,str,IMAGE_BITMAP,0,0,LR_LOADFROMFILE|LR_CREATEDIBSECTION);
 			BITMAP bit;
 			if(GetObject(hbitmap,sizeof(BITMAP),&bit)==0)
@@ -248,12 +248,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			//bit.bmBits[
 			SelectObject(memdc1,hbitmap);
 			scene.texdc=memdc1;
-			//êí·?DC
+			//释放DC
 			ReleaseDC(hWnd,hdc1);
 			load();
 			SetTimer(hWnd,1,5,TimerProc);
 
-			//scene.init_texbitmap("C:\\Users\\mrzhang\\Desktop\\???t\\±à3ì\\×??oμ?′ú??\\???·\\res\\qi.bmp");
+			//scene.init_texbitmap("C:\\Users\\mrzhang\\Desktop\\文件\\编程\\自己的代码\\格斗\\res\\qi.bmp");
 					   }
 			break;
 		case WM_COMMAND:
@@ -283,9 +283,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			itoa(fps,str,10);
 			TextOut(hdc,0,0,str,10);
 
-			TextOut(hdc,0,20,"J,K,L,I,N,Mò??ˉ??ì?",19);
-			TextOut(hdc,0,40,"UP,DOWN,LEFT,RIGHT,Z,Xò??ˉ?à?ú",30);
-			TextOut(hdc,0,60,"A,S,D,WDy×a??ì?",15);
+			TextOut(hdc,0,20,"J,K,L,I,N,M移动物体",19);
+			TextOut(hdc,0,40,"UP,DOWN,LEFT,RIGHT,Z,X移动相机",30);
+			TextOut(hdc,0,60,"A,S,D,W旋转物体",15);
 			char str1[10]={0,0,0,0,0,0,0,0,0,0};
 			itoa(scene.vNum,str1,10);
 			TextOut(hdc,0,80,str1,10);
